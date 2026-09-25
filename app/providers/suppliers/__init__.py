@@ -1,0 +1,1 @@
+"""Supplier provider adapters."""

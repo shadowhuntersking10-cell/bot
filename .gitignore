@@ -1,0 +1,37 @@
+# environments / secrets
+.env
+.env.*
+!.env.example
+
+# python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# databases / runtime
+*.sqlite3
+*.db
+runtime/
+logs/
+*.log
+
+# node / tooling
+node_modules/
+
+# os
+.DS_Store
+Thumbs.db
+
+# editors
+.idea/
+.vscode/
+
+# user uploads (admin media)
+uploads/
