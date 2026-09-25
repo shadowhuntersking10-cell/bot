@@ -208,6 +208,16 @@ GAME_IMAGES: dict[str, str] = {
     "efootball": "/assets/img/currency/efootball.webp",
     "asphalt": "/assets/img/currency/asphalt.webp",
     "twitch": "/assets/img/currency/twitch.webp",
+    "xbox": "/assets/img/currency/xbox.webp",
+    "playstation": "/assets/img/currency/playstation.webp",
+    "nintendo": "/assets/img/currency/nintendo.webp",
+    "google-play": "/assets/img/currency/google-play.webp",
+    "apple-gift-card": "/assets/img/currency/apple-gift-card.webp",
+    "discord": "/assets/img/currency/discord.webp",
+    "battlenet": "/assets/img/currency/battlenet.webp",
+    "steam": "/assets/img/currency/steam.webp",
+    "gift-cards": "/assets/img/currency/gift-cards.webp",
+    "other-products": "/assets/img/currency/other-products.webp",
 }
 
 
