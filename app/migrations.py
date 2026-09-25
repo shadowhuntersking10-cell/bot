@@ -180,7 +180,7 @@ CURRENCY_STYLES: dict[str, dict] = {
 GAME_IMAGES: dict[str, str] = {
     "pubg-mobile": "/assets/img/currency/uc.webp",
     "free-fire": "/assets/img/currency/ff-diamonds.webp",
-    "free-fire-max": "/assets/img/currency/ff-diamonds.webp",
+    "free-fire-max": "/assets/img/currency/free-fire-max.webp",
     "mobile-legends": "/assets/img/currency/ml-diamonds.webp",
     "roblox": "/assets/img/currency/robux.webp",
     "clash-of-clans": "/assets/img/currency/coc-gems.webp",
@@ -199,6 +199,15 @@ GAME_IMAGES: dict[str, str] = {
     "zenless-zone-zero": "/assets/img/currency/zenless-zone-zero.webp",
     "wuthering-waves": "/assets/img/currency/wuthering-waves.webp",
     "cod-mobile": "/assets/img/currency/cod-mobile.webp",
+    "cod-warzone": "/assets/img/currency/cod-warzone.webp",
+    "arena-breakout": "/assets/img/currency/arena-breakout.webp",
+    "pubg-battlegrounds": "/assets/img/currency/pubg-battlegrounds.webp",
+    "minecraft": "/assets/img/currency/minecraft.webp",
+    "tlauncher": "/assets/img/currency/tlauncher.webp",
+    "pokemon-go": "/assets/img/currency/pokemon-go.webp",
+    "efootball": "/assets/img/currency/efootball.webp",
+    "asphalt": "/assets/img/currency/asphalt.webp",
+    "twitch": "/assets/img/currency/twitch.webp",
 }
 
 
@@ -364,10 +373,10 @@ def seed_database() -> None:
                 continue
             for attr in ("icon_url", "logo_url", "banner_url"):
                 current = getattr(game, attr)
-                if not current or current.startswith("data:") or current.startswith("/api/art/"):
+                if not current or current.startswith(("data:", "/api/art/", "/assets/img/currency/")):
                     setattr(game, attr, real)
             for product in game.products:
-                if not product.image_url or product.image_url.startswith(("data:", "/api/art/")):
+                if not product.image_url or product.image_url.startswith(("data:", "/api/art/", "/assets/img/currency/")):
                     product.image_url = real
 
         # admin-editable settings with safe defaults (no secrets)
