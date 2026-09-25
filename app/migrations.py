@@ -189,6 +189,16 @@ GAME_IMAGES: dict[str, str] = {
     "standoff-2": "/assets/img/currency/so2-gold.webp",
     "genshin-impact": "/assets/img/currency/primogems.webp",
     "telegram-stars": "/assets/img/currency/tg-stars.webp",
+    "valorant": "/assets/img/currency/valorant.webp",
+    "honor-of-kings": "/assets/img/currency/honor-of-kings.webp",
+    "league-of-legends": "/assets/img/currency/league-of-legends.webp",
+    "counter-strike-2": "/assets/img/currency/counter-strike-2.webp",
+    "dota-2": "/assets/img/currency/dota-2.webp",
+    "ea-sports-fc": "/assets/img/currency/ea-sports-fc.webp",
+    "honkai-star-rail": "/assets/img/currency/honkai-star-rail.webp",
+    "zenless-zone-zero": "/assets/img/currency/zenless-zone-zero.webp",
+    "wuthering-waves": "/assets/img/currency/wuthering-waves.webp",
+    "cod-mobile": "/assets/img/currency/cod-mobile.webp",
 }
 
 
